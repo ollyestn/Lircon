@@ -2,6 +2,7 @@ package com.taiji.Lircon.controller;
 
 import com.taiji.Lircon.service.Model3dBaseService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,7 +21,7 @@ public class Model3dBaseController {
     private Model3dBaseService model3dBaseService;
 
     // controller的实现都得自己写
-    @RequestMapping("/GetAll")
+    @GetMapping("/GetAll")
     public String GetAll() {
         return "model3dBase/index";
     }

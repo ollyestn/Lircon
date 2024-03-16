@@ -24,6 +24,11 @@ class LirconApplicationTests {
 	}
 
 	@Test
+	public void test1(){
+		System.out.println("in test1()");
+//		NewGen();
+	}
+
 	public void NewGen(){
 		System.out.println("欢迎来到 Code Generator 课堂");
 		System.out.println(System.getProperty("user.dir"));
